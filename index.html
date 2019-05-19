@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Soal Frontend Decode</title>
+    <title>Soal Frontend Login</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css">
     <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
-    <body class="login-page">
-        <div class="container">
-            <div class="row">
-                    <div class="login-box">
-                        <div class="login-logo">
-                            <img src="assets/img/icon_utama.PNG" >
-                        </div>             
-                        <div class="card" style="border-radius: 20px"> 
-                            <div class="card-body">
-                                <div style="text-align : center">
-                                   <img src="assets/img/material_account.png" width="20%" height="20%" style="margin-bottom:10px;">
-                                   <p class="text-biasa">Login to account</p>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+<body class="login-page">
+    <div class="container">
+        <div class="row">
+            <div class="login-box">
+                <div class="login-logo">
+                    <img src="assets/img/icon_utama.PNG">
+                </div>
+                <div class="card" style="border-radius: 20px">
+                    <div class="card-body">
+                        <div style="text-align : center">
+                            <img src="assets/img/material_account.png" width="20%" height="20%"
+                                style="margin-bottom:10px;">
+                            <p class="text-biasa">Login to account</p>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label>Username</label>
+                                <div class="input-group mb-3" style="border:1px solid #8f8f8f;">
+                                    <input type="text" class="form-control" placeholder="Please input your username">
                                 </div>
-                                <form>
-                                    <div class="form-group">
-                                        <label>Username</label>
-                                        <div class="input-group mb-3" style="border:1px solid #8f8f8f;">
-                                            <input type="text" class="form-control" placeholder="Please input your username">
-                                        </div>
-                                    </div>
-                                    <div class="form-group" style="margin-bottom:40px">
-                                        <label>Password</label>
-                                        <div class="input-group mb-3" style="border:1px solid #8f8f8f;">
-                                            <input type="password" class="form-control" placeholder="Please input your password"
-                                            id="password" style="border: none">
-                                             <div class="input-group-append" style="color:#bfbfbf; opacity: 0.5;">
-                                                <button id="btn_show_hide"   type="button" class="btn btn-default">
-                                                    <i id="ic_eye" class="fa fa-eye"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button  type="button" class="btn btn-primary btn-rounded">L O G I N</button>
-                                </form>
                             </div>
-                        </div>
-                        <div style="text-align : center;margin-top:20px;">
-                            <p style="color: #fff"><a href="#">English</a>&emsp;|&emsp;<a href="#">ي ب ل ع</a></p>  
-                        </div>
+                            <div class="form-group" style="margin-bottom:40px">
+                                <label>Password</label>
+                                <div class="input-group mb-3" style="border:1px solid #8f8f8f;">
+                                    <input type="password" class="form-control" placeholder="Please input your password"
+                                        id="password" style="border: none">
+                                    <div class="input-group-append" style="color:#bfbfbf; opacity: 0.5;">
+                                        <button id="btn_show_hide" type="button" class="btn btn-default">
+                                            <i id="ic_eye" class="fa fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-rounded"><strong>L O G I
+                                    N</strong></button>
+                        </form>
                     </div>
+                </div>
+                <div style="text-align : center;margin-top:20px;">
+                    <p style="color: #fff"><a href="#">English</a>&emsp;|&emsp;<a href="#">ي ب ل ع</a></p>
+                </div>
             </div>
-               
         </div>
-            
+
+    </div>
+
     <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/lib/jquery/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $('#btn_show_hide').on('click',function(event){
+        $(document).ready(function () {
+            $('#btn_show_hide').on('click', function (event) {
                 event.preventDefault();
-                if($('#password').attr("type") == "text"){
-                    $('#password').attr('type','password');
+                if ($('#password').attr("type") == "text") {
+                    $('#password').attr('type', 'password');
                     $('#ic_eye').removeClass();
                     $('#ic_eye').addClass("fa fa-eye");
-                }else if($('#password').attr("type") == "password") {
-                    $('#password').attr('type','text');
+                } else if ($('#password').attr("type") == "password") {
+                    $('#password').attr('type', 'text');
                     $('#ic_eye').removeClass();
                     $('#ic_eye').addClass("fa fa-eye-slash");
-                }    
+                }
             });
         });
     </script>
-    </body>
+</body>
 </head>
+
 </html>

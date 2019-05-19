@@ -8,6 +8,14 @@
     max-height: 100%;
     overflow-y: hidden;
     overflow-x: auto;
+    font-family: $font-utama;
+}
+
+.product-page{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: $color-background-product;
+    font-family: $font-utama;
 }
 
 .login-box{
@@ -31,16 +39,54 @@
     text-decoration : none;
 }
 
+.text-bold{
+    font-weight: bolder;
+}
+
 .btn-rounded{
     border-radius: 60px !important;
     width: 100%;
+    background-color: #1565c0 !important;
 }
+
+.product-img{
+   
+}
+.product-title{
+    font-weight:bold ;
+    font-size:13px ;
+    margin-bottom: 0px ;
+}
+
+.product-price{
+    font-weight:100 ;
+    color: #818181 ;
+    font-size: 11px ;
+}
+.grey-header{
+    background-color:#eeeeee !important;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 
 
 
 @media only screen and (max-width:620px) {
     /* For mobile phones responsive: */
-    .login-box, .login-logo, .login-box-body, .text-biasa, .btn-rounded {
+    .login-box, .login-logo, .login-box-body, .text-biasa, .btn-rounded, .product-page, .product-title, .product-price {
       width:90%;
     }
-  }
+}
+
+@media only screen and (max-width:768px){
+    .product-title, .product-price, .product-img{
+        text-align : center;
+    }
+
+}
