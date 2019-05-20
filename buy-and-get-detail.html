@@ -8,6 +8,8 @@
     <title>Soal Frontend Produk</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/datatable/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/datatable/css/responsive.bootstrap4.min.css">
     <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
@@ -124,7 +126,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <div class="row">  
+                                                    <div class="row">
                                                         <div class="col-sm-2" style="margin-left:10px;">
                                                             <div class="product-img">
                                                                 <img src="assets/img/lenovo_mouse.jpg"
@@ -183,163 +185,116 @@
                             </div>
                         </div>
                         <div class="row" style="margin-top: 20px">
-                                <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-header text-center grey-header">
-                                                <strong>Promotion Time Frame</strong>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header text-center grey-header">
+                                        <strong>Promotion Time Frame</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p class="product-title">Start</p>
                                             </div>
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <p class="product-title">Start</p>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <p style="font-size:14px;"> <b>:</b></p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <p style="font-size:14px;">12/4/2019, 12.00</p>
-                                                    </div>
-                                                </div>
-                                                <hr style="margin-top:0px"/>
-                                                <div class="row" style="margin-top:0px">
-                                                    <div class="col-md-4">
-                                                        <p class="product-title">Expiration</p>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <p style="font-size:14px;"> <b>:</b></p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <p style="font-size:14px;">22/4/2019, 12.00</p>
-                                                    </div>
-                                                </div>
-                                                <hr style="margin-top:0px"/>
+                                            <div class="col-md-1">
+                                                <p style="font-size:14px;"> <b>:</b></p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p style="font-size:14px;">12/4/2019, 12.00</p>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:0px" />
+                                        <div class="row" style="margin-top:0px;">
+                                            <div class="col-md-4">
+                                                <p class="product-title">Expiration</p>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <p style="font-size:14px;"> <b>:</b></p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p style="font-size:14px;">22/4/2019, 12.00</p>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:0px" />
+                                        <div class="row" style="text-align: center">
+                                            <div style="margin: 0 auto">
+                                                <i class="fa fa-clock-o"></i>&nbsp; <b>10</b>&nbsp;Day &nbsp;
+                                                <b>12</b>&nbsp;Hour&nbsp;<b>00</b>&nbsp;Minute
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header text-center grey-header">
-                                                <strong>Get Product</strong>
+                                </div>
+                                <div class="card" style="margin-top:20px">
+                                    <div class="card-body text-center">
+                                        <h1>30</h1>
+                                        <br>
+                                        <strong style="font-size:19px">Store</strong>
+                                        <p>Selected Promotion</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <div class="card-header text-center grey-header" style="cursor:pointer"
+                                        href="#cardCollapse" id="toogleHeader">
+                                        <strong>Store that get promotions</strong>
+                                    </div>
+                                    <div class="card-body" id="cardCollapse">
+                                        <div class="row">
+                                            <div class="col-md-10">
                                             </div>
-                                            <div class="card-body">
-                                                <div class="carousel slide" id="carouselProduct" data-ride="carousel">
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#carouselProduct" data-slide-to="0" class="active">
-                                                        </li>
-                                                        <li data-target="#carouselProduct" data-slide-to="1"></li>
-                                                    </ol>
-                                                    <div class="carousel-inner">
-                                                        <div class="carousel-item active">
-                                                            <div class="row">
-                                                                <div class="col-sm-2" style="margin-left:10px;">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_mouse.jpg"
-                                                                            class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Lenovo
-                                                                            Mouse</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-1"></div>
-                                                                <div class="col-sm-2">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_pad.png" class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Mouse
-                                                                            Pad</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-1"></div>
-                                                                <div class="col-sm-2">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_mouse.jpg"
-                                                                            class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Lenovo
-                                                                            Mouse</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-1"></div>
-                                                                <div class="col-sm-2">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_pad.png" class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Mouse
-                                                                            Pad</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                            <div class="row">  
-                                                                <div class="col-sm-2" style="margin-left:10px;">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_mouse.jpg"
-                                                                            class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Lenovo
-                                                                            Mouse</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-1"></div>
-                                                                <div class="col-sm-2">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_pad.png" class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Mouse
-                                                                            Pad</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-1"></div>
-                                                                <div class="col-sm-2">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_mouse.jpg"
-                                                                            class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Lenovo
-                                                                            Mouse</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-1"></div>
-                                                                <div class="col-sm-2">
-                                                                    <div class="product-img">
-                                                                        <img src="assets/img/lenovo_pad.png" class="img-fluid">
-                                                                    </div>
-                                                                    <br>
-                                                                    <div class="text-center">
-                                                                        <p class="product-title" style="font-size:11px;">Mouse
-                                                                            Pad</p>
-                                                                        <pre class="product-price">SAR 50.0000</pre>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group ">
+                                                    <select class="form-control">
+                                                        <option>10</option>
+                                                        <option>25</option>
+                                                        <option>100</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped" id="myTable">
+                                                    <thead>
+                                                        <tr class="table-active">
+                                                            <th>No.</th>
+                                                            <th>Store / Branch</th>
+                                                            <th>Provincies</th>
+                                                            <th>City</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Metrocom Technology</td>
+                                                            <td>Jawa Barat</td>
+                                                            <td>Cimahi</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Eraphone Digital</td>
+                                                            <td>Jawa Timur</td>
+                                                            <td>Surabaya</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>M2M Tech</td>
+                                                            <td>Lampung</td>
+                                                            <td>Bandarlampung</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Altec Store</td>
+                                                            <td>Jawa Tengah</td>
+                                                            <td>Pekalongan</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -352,10 +307,27 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS library for responsive datatable Bootsrap 4 -->
+    <script type="text/javascript" src="assets/lib/datatable/datatable.min.js"></script>
+    <script type="text/javascript" src="assets/lib/datatable/datatable_bootstrap4.min.js"></script>
+    <script type="text/javascript" src="assets/lib/datatable/datatableresponsive.min.js"></script>
+    <script type="text/javascript" src="assets/lib/datatable/responsive.bootstrap4.min.js"></script>
 
     <script>
         $(document).ready(function () {
             console.log("tes");
+        });
+        $('#myTable').DataTable({
+            searching: false,
+            ordering: false,
+            lengthChange: false
+        });
+        $('#toogleHeader').on('click', function () {
+            console.log("diklik");
+            var collapse_content_selector = $(this).attr('href');
+            var toogle_switch = $(this);
+
+            $(collapse_content_selector).slideToggle();
         });
     </script>
 
